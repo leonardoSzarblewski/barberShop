@@ -8,4 +8,17 @@ body {
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #050505;
+}
+
+.buttonHairDay {
+  background-color: #2E2C30;
+  border: none;
+  color: #B8952E;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 18px 30px;
+  border-bottom-right-radius: 8px;
 }
