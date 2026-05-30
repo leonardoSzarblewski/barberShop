@@ -1,0 +1,21 @@
+.scheduling-field {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    padding: 13px;
+    color: var(--color-text-secondary);
+}
+
+.scheduling-button {
+    width: 100%;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.scheduling-icon {
+    color: var(--color-primary);
+    font-size: 20px;
+}

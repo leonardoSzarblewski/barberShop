@@ -1,30 +1,9 @@
-import React from 'react'
 import { Button, DatePicker, Form, Input } from "antd";
 import { CalendarOutlined, DownOutlined, UserOutlined } from '@ant-design/icons'
 import { strings } from '../constants/strings'
 import dayjs, { Dayjs } from 'dayjs'
 
-const fieldStyle: React.CSSProperties = {
-    width: '100%',
-    backgroundColor: 'transparent',
-    border: '1px solid var(--color-border)',
-    padding: '13px',
-    color: 'var(--color-text-secondary)',
-}
-
-const buttonStyle: React.CSSProperties = {
-    width: '100%',
-    backgroundColor: 'var(--color-primary)',
-    border: 'none',
-    padding: '30px',
-    color: 'black',
-    fontWeight: '600'
-}
-
-const iconsStyle: React.CSSProperties = {
-    color: 'var(--color-primary)', 
-    fontSize: '20px'
-}
+import './SchedulingForm.css'
 
 
 export function SchedulingForm() {
@@ -38,9 +17,9 @@ export function SchedulingForm() {
             >
                 <DatePicker
                     placeholder={strings.scheduling.datePlaceholder}
-                    style={fieldStyle}
+                    className="scheduling-field"
                     size="large"
-                    prefix={<CalendarOutlined style={ iconsStyle } />}
+                    prefix={<CalendarOutlined className="scheduling-icon" />}
                     suffixIcon={<DownOutlined style={{ color: 'var(--color-text-secondary)' }} />}
                     format="DD/MM/YYYY"
                     disabledDate={disabledData}
@@ -53,14 +32,14 @@ export function SchedulingForm() {
             >
                 <Input 
                     placeholder={strings.scheduling.clientPlaceholder} 
-                    style={fieldStyle}
-                    prefix={<UserOutlined style={ iconsStyle } />}
+                    className="scheduling-field"
+                    prefix={<UserOutlined className="scheduling-icon" />}
                     size="large"
                 />
             </Form.Item>
 
             <Button
-               style={buttonStyle}
+               className="scheduling-button"
             >
                 {strings.scheduling.submitButton}
             </Button>
