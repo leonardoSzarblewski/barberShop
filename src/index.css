@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,4 +25,14 @@ body {
   letter-spacing: 0.5px;
   padding: 18px 30px;
   border-bottom-right-radius: 8px;
+
+}
+
+.containerRight{
+  background-color: #19181B;
+  margin: 12px;
+  border-radius: 7px;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
 }
