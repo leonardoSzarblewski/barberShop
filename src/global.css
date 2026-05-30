@@ -1,0 +1,68 @@
+:root {
+  --color-background: #19181B;
+  --color-surface: #232225;
+  --color-primary: #B8952E;
+  --color-button-bg: #2E2C30;
+  --color-text-primary: #F5F4F5;
+  --color-text-secondary: #98959D;
+  --color-text-label: #B2AFB6;
+  --color-border: #98959D;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--color-background);
+}
+
+.buttonHairDay {
+  background-color: var(--color-button-bg);
+  border: none;
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 18px 30px;
+  border-bottom-right-radius: 8px;
+
+}
+
+.ant-form-item-label > label {
+  color: var(--color-text-label) !important;
+  font-weight: 700;
+}
+
+.ant-picker-input input {
+  color: var(--color-text-secondary) !important;
+}
+
+.ant-picker-clear {
+  color: var(--color-text-secondary) !important;
+  background-color: transparent !important;
+}
+
+.ant-picker-input input::placeholder {
+  color: var(--color-text-secondary) !important;
+}
+
+.containerRight{
+  background-color: var(--color-surface);
+  margin: 12px;
+  border-radius: 7px;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
