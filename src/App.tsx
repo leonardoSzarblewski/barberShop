@@ -1,6 +1,7 @@
 import { Flex, Typography } from 'antd'
 import { strings } from './constants/strings'
 import 'antd/dist/reset.css'
+import { SchedulingForm } from './components/SchedulingForm'
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
           >
             {strings.scheduling.description}
           </Typography.Paragraph>
+          
+          <SchedulingForm/>
         </Flex>
-
       </Flex>
     </div>
   )
