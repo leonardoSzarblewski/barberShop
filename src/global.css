@@ -57,6 +57,10 @@ body {
   color: var(--color-text-secondary) !important;
 }
 
+.ant-input::placeholder {
+  color: var(--color-text-secondary) !important;
+}
+
 .containerRight{
   background-color: var(--color-surface);
   margin: 12px;
